@@ -1,0 +1,120 @@
+# Bongopunk Antibaryon (Dark Mode) Transparent for Alacritty
+# Based on Fluoromachine by maxmx03
+
+[colors.primary]
+background = "NONE" # Transparent background
+foreground = "#8BA7A7"
+dim_foreground = "#495495"
+bright_foreground = "#B8C5C5"
+
+[colors.cursor]
+text = "CellBackground" # Transparent cursor text
+cursor = "#8BA7A7"
+
+[colors.vi_mode_cursor]
+text = "CellBackground" # Transparent vi cursor text
+cursor = "#AF6DF9"
+
+[colors.search.matches]
+foreground = "#8BA7A7"
+background = "#4A6B7C"
+
+[colors.search.focused_match]
+foreground = "#090318"
+background = "#FFCC00"
+
+[colors.footer_bar]
+foreground = "#8BA7A7"
+background = "NONE" # Transparent footer
+
+[colors.hints.start]
+foreground = "#090318"
+background = "#FFCC00"
+
+[colors.hints.end]
+foreground = "#8BA7A7"
+background = "#4A6B7C"
+
+[colors.selection]
+text = "#8BA7A7"
+background = "#2D4A5C"
+
+[colors.normal]
+black = "#090318"
+red = "#FE4450"
+green = "#72F1B8"
+yellow = "#FFCC00"
+blue = "#61E2FF"
+magenta = "#FC199A"
+cyan = "#61E2FF"
+white = "#8BA7A7"
+
+[colors.bright]
+black = "#495495"
+red = "#FF6B7A"
+green = "#8FFAC8"
+yellow = "#FFD633"
+blue = "#7AEBFF"
+magenta = "#FF4DB8"
+cyan = "#7AEBFF"
+white = "#B8C5C5"
+
+[colors.dim]
+black = "#1A1625"
+red = "#CB3740"
+green = "#5BB896"
+yellow = "#CCA300"
+blue = "#4A9FB8"
+magenta = "#C9147B"
+cyan = "#4A9FB8"
+white = "#6B7A7A"
+
+# Window styling for transparency
+[window]
+opacity = 0.85   # Adjust transparency level
+blur = true      # Enable blur for better readability
+
+[window.padding]
+x = 8
+y = 8
+
+# Font configuration
+[font]
+size = 12.0
+
+[font.normal]
+family = "Hack Nerd Font Mono"
+style = "Regular"
+
+[font.bold]
+family = "Hack Nerd Font Mono"
+style = "Bold"
+
+[font.italic]
+family = "Hack Nerd Font Mono"
+style = "Italic"
+
+[font.bold_italic]
+family = "Hack Nerd Font Mono"
+style = "Bold Italic"
+
+# Cursor styling
+[cursor.style]
+shape = "Block"
+blinking = "On"
+
+[cursor.blink_interval] = 750
+[cursor.blink_timeout] = 5
+
+# Bell
+[bell]
+animation = "EaseOutExpo"
+duration = 0
+color = "#FFCC00"
+
+# Mouse
+[mouse]
+hide_when_typing = true
+
+# Live config reload
+live_config_reload = true

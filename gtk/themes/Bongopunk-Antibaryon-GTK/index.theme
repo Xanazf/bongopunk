@@ -1,0 +1,18 @@
+[X-GNOME-Metatheme]
+Name=Bongopunk-Antibaryon-GTK
+Type=X-GNOME-Metatheme
+Comment=GTK version of the Bongopunk Antibaryon Theme - Synthwave dark theme with bright neon accents
+Encoding=UTF-8
+
+[Desktop Entry]
+Type=X-GNOME-Metatheme
+Name=Bongopunk-Antibaryon-GTK
+Comment=GTK version of the Bongopunk Antibaryon Theme - Synthwave dark theme with bright neon accents
+Encoding=UTF-8
+
+[X-GNOME-Metatheme]
+GtkTheme=Bongopunk-Antibaryon-GTK
+MetacityTheme=Bongopunk-Antibaryon-GTK
+IconTheme=candy-icons
+CursorTheme=default
+ButtonLayout=icon:minimize,maximize,close

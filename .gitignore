@@ -1,0 +1,58 @@
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Editor files
+*.swp
+*.swo
+*~
+.vscode/
+.idea/
+
+# Temporary files
+*.tmp
+*.temp
+*.log
+
+# Cache files
+*.cache
+.cache/
+
+# Backup files
+*.bak
+*.backup
+
+# Local configuration
+local.conf
+*.local
+
+# Test files
+test/
+tests/output/
+
+# Build artifacts
+build/
+dist/
+*.tar.gz
+*.zip
+
+# Node modules (if any JS tools are added)
+node_modules/
+
+# Python cache (if any Python tools are added)
+__pycache__/
+*.pyc
+*.pyo
+
+# Lua cache
+luac.out
+
+./gtk/themes/Bongopunk-Antibaryon-GTK/assets
+./gtk/themes/Bongopunk-Antibaryon-GTK/assets/*
+./gtk/themes/Bongopunk-Baryon-GTK/assets
+./gtk/themes/Bongopunk-Baryon-GTK/assets/*

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="32" height="32" version="1.1" xmlns="http://www.w3.org/2000/svg">
+ <defs>
+  <!-- Enhanced glow filters for light theme -->
+  <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+   <feGaussianBlur stdDeviation="2" result="coloredBlur"/>
+   <feMerge> 
+    <feMergeNode in="coloredBlur"/>
+    <feMergeNode in="SourceGraphic"/>
+   </feMerge>
+  </filter>
+  
+  <filter id="text-glow" x="-50%" y="-50%" width="200%" height="200%">
+   <feGaussianBlur stdDeviation="1" result="coloredBlur"/>
+   <feMerge> 
+    <feMergeNode in="coloredBlur"/>
+    <feMergeNode in="SourceGraphic"/>
+   </feMerge>
+  </filter>
+  
+  <filter id="subtle-glow" x="-30%" y="-30%" width="160%" height="160%">
+   <feGaussianBlur stdDeviation="1.5" result="coloredBlur"/>
+   <feMerge> 
+    <feMergeNode in="coloredBlur"/>
+    <feMergeNode in="SourceGraphic"/>
+   </feMerge>
+  </filter>
+  
+
+ </defs>
+ 
+ <!-- Button Normal -->
+ <rect id="button" x="0" y="0" width="32" height="32" rx="2" fill="#F5F5F5" stroke="none"/>
+ 
+ <!-- Button Pressed -->
+ <rect id="button-pressed" x="0" y="32" width="32" height="32" rx="2" fill="#E5E7EB" stroke="none"/>
+ 
+ <!-- Button Hover with glow -->
+ <rect id="button-hover" x="0" y="64" width="32" height="32" rx="2" fill="#F5F5F5" stroke="#0891B2" stroke-width="1" filter="url(#glow)"/>
+ 
+ <!-- Scrollbar -->
+ <rect id="scrollbar-slider" x="32" y="0" width="16" height="32" rx="2" fill="#9CA3AF"/>
+ <rect id="scrollbar-slider-hover" x="32" y="32" width="16" height="32" rx="2" fill="#0891B2" filter="url(#glow)"/>
+ <rect id="scrollbar-groove" x="48" y="0" width="16" height="32" fill="#F5F5F5"/>
+ 
+ <!-- Progress bar -->
+ <rect id="progressbar-chunk" x="64" y="0" width="32" height="8" fill="#0891B2"/>
+ <rect id="progressbar-groove" x="64" y="8" width="32" height="8" fill="#E5E7EB"/>
+ 
+ <!-- Tab -->
+ <rect id="tab-selected" x="96" y="0" width="32" height="32" fill="#F3F4F6" stroke="#0891B2" stroke-width="1"/>
+ <rect id="tab-normal" x="96" y="32" width="32" height="32" fill="#FAFAFA" stroke="none"/>
+ 
+ <!-- Menu -->
+ <rect id="menu" x="128" y="0" width="32" height="32" fill="#FAFAFA" stroke="none"/>
+ <rect id="menuitem-selected" x="128" y="32" width="32" height="16" fill="#F3F4F6" stroke="#0891B2" stroke-width="1" filter="url(#glow)"/>
+ 
+ <!-- Input elements -->
+ <rect id="lineedit" x="160" y="0" width="32" height="16" fill="#F5F5F5" stroke="none"/>
+ <rect id="lineedit-focus" x="160" y="16" width="32" height="16" fill="#F5F5F5" stroke="#0891B2" stroke-width="1" filter="url(#glow)"/>
+ 
+ <!-- Combo box -->
+ <rect id="combo" x="192" y="0" width="32" height="16" fill="#F3F4F6" stroke="none"/>
+ <rect id="combo-hover" x="192" y="16" width="32" height="16" fill="#F3F4F6" stroke="#0891B2" stroke-width="1" filter="url(#glow)"/>
+</svg>

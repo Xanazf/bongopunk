@@ -1,0 +1,105 @@
+/* Bongopunk Baryon (Light Mode) for Rofi */
+/* Based on Fluoromachine by maxmx03 */
+
+* {
+    /* Color definitions */
+    bg: #FAFAFA;
+    bg-alt: #F5F5F5;
+    fg: #2D2D2D;
+    fg-alt: #6B7280;
+    
+    /* Accent colors */
+    cyan: #0891B2;
+    green: #059669;
+    orange: #EA580C;
+    pink: #BE185D;
+    purple: #7C3AED;
+    red: #DC2626;
+    yellow: #D97706;
+    
+    /* UI colors */
+    border: #D1D5DB;
+    selection: #E5E7EB;
+    urgent: #DC2626;
+    active: #7C3AED;
+    
+    /* Base settings */
+    background-color: transparent;
+    text-color: @fg;
+    font: "Hack Nerd Font 12";
+}
+
+window {
+    background-color: @bg;
+    border: 2px;
+    border-color: @border;
+    border-radius: 8px;
+    padding: 8px;
+    width: 600px;
+}
+
+mainbox {
+    background-color: transparent;
+    children: [ inputbar, listview ];
+    spacing: 8px;
+}
+
+inputbar {
+    background-color: @bg-alt;
+    border: 1px;
+    border-color: @border;
+    border-radius: 4px;
+    padding: 8px;
+    children: [ prompt, entry ];
+}
+
+prompt {
+    background-color: transparent;
+    text-color: @cyan;
+    padding: 0px 8px 0px 0px;
+}
+
+entry {
+    background-color: transparent;
+    text-color: @fg;
+    placeholder: "Search...";
+    placeholder-color: @fg-alt;
+}
+
+listview {
+    background-color: transparent;
+    lines: 8;
+    scrollbar: false;
+    spacing: 2px;
+}
+
+element {
+    background-color: transparent;
+    text-color: @fg;
+    padding: 8px;
+    border-radius: 4px;
+}
+
+element selected {
+    background-color: @selection;
+    text-color: @cyan;
+}
+
+element-text {
+    background-color: transparent;
+    text-color: inherit;
+}
+
+element-icon {
+    background-color: transparent;
+    size: 24px;
+    padding: 0px 8px 0px 0px;
+}
+
+element urgent {
+    text-color: @urgent;
+}
+
+element active {
+    text-color: @active;
+}

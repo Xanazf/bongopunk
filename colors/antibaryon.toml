@@ -1,0 +1,65 @@
+# Bongopunk Antibaryon (Dark Mode) Color Palette
+# Based on Fluoromachine by maxmx03
+# https://github.com/maxmx03/fluoromachine.nvim
+#
+# Transparency Support:
+# - Use "NONE" or "none" for transparent backgrounds
+# - Adjust opacity values in terminal configs
+# - See TRANSPARENCY.md for detailed setup guide
+
+[colors]
+# Base colors
+bg = "#090318"           # Dark navy-blue background
+fg = "#8BA7A7"           # Light blue-gray foreground
+bg_alt = "#070216"       # Darker navy background variant
+fg_alt = "#495495"       # Muted foreground variant
+
+# Selection and highlights
+selection = "#2D4A5C"    # Selection background
+line_highlight = "#2D4A5C"  # Current line highlight
+cursor = "#8BA7A7"       # Cursor color
+
+# Accent colors (neon/bright)
+cyan = "#61E2FF"         # Electric cyan
+green = "#72F1B8"        # Neon green
+orange = "#FF8B39"       # Bright orange
+pink = "#FC199A"         # Hot pink
+purple = "#AF6DF9"       # Electric purple
+red = "#FE4450"          # Bright red
+yellow = "#FFCC00"       # Electric yellow
+
+# Muted variants
+cyan_muted = "#4A9FB8"
+green_muted = "#5BB896"
+orange_muted = "#CC6F2E"
+pink_muted = "#C9147B"
+purple_muted = "#8B57C7"
+red_muted = "#CB3740"
+yellow_muted = "#CCA300"
+
+# UI elements
+border = "#4A6B7C"       # Border color
+comment = "#495495"      # Comment color
+warning = "#FFCC00"      # Warning color
+error = "#FE4450"        # Error color
+info = "#61E2FF"         # Info color
+success = "#72F1B8"      # Success color
+
+# Terminal colors (16-color palette)
+[terminal]
+black = "#090318"
+red = "#FE4450"
+green = "#72F1B8"
+yellow = "#FFCC00"
+blue = "#61E2FF"
+magenta = "#FC199A"
+cyan = "#61E2FF"
+white = "#8BA7A7"
+bright_black = "#495495"
+bright_red = "#FF6B7A"
+bright_green = "#8FFAC8"
+bright_yellow = "#FFD633"
+bright_blue = "#7AEBFF"
+bright_magenta = "#FF4DB8"
+bright_cyan = "#7AEBFF"
+bright_white = "#B8C5C5"

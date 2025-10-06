@@ -1,0 +1,433 @@
+/* Bongopunk Baryon (Light Mode) - GTK 3.0 Theme
+ * Clean light theme with darker, muted accent colors
+ */
+
+/* Color definitions */
+@define-color bg_color #FAFAFA;
+@define-color fg_color #2D2D2D;
+@define-color base_color #F5F5F5;
+@define-color text_color #2D2D2D;
+@define-color selected_bg_color #0891B2;
+@define-color selected_fg_color #FAFAFA;
+@define-color tooltip_bg_color #FAFAFA;
+@define-color tooltip_fg_color #2D2D2D;
+@define-color theme_bg_color #FAFAFA;
+@define-color theme_fg_color #2D2D2D;
+@define-color theme_base_color #F5F5F5;
+@define-color theme_text_color #2D2D2D;
+@define-color theme_selected_bg_color #0891B2;
+@define-color theme_selected_fg_color #FAFAFA;
+@define-color insensitive_bg_color #E5E7EB;
+@define-color insensitive_fg_color #9CA3AF;
+@define-color insensitive_base_color #F3F4F6;
+@define-color theme_unfocused_fg_color #6B7280;
+@define-color theme_unfocused_bg_color #F5F5F5;
+@define-color theme_unfocused_base_color #F3F4F6;
+@define-color theme_unfocused_selected_bg_color #06B6D4;
+@define-color theme_unfocused_selected_fg_color #FAFAFA;
+@define-color borders #D1D5DB;
+@define-color unfocused_borders #E5E7EB;
+@define-color warning_color #D97706;
+@define-color error_color #DC2626;
+@define-color success_color #059669;
+
+/* Accent colors */
+@define-color accent_color #0891B2;
+@define-color accent_bg_color #0891B2;
+@define-color accent_fg_color #FAFAFA;
+@define-color destructive_color #DC2626;
+@define-color destructive_bg_color #DC2626;
+@define-color destructive_fg_color #FAFAFA;
+
+/* Window styling */
+window {
+    background-color: @bg_color;
+    color: @fg_color;
+}
+
+/* Headerbar */
+headerbar {
+    background: linear-gradient(to bottom, #FFFFFF, #F5F5F5);
+    border-bottom: 1px solid @borders;
+    color: @fg_color;
+    box-shadow: inset 0 1px rgba(255, 255, 255, 0.8);
+}
+
+headerbar:backdrop {
+    background: @theme_unfocused_bg_color;
+    color: @theme_unfocused_fg_color;
+}
+
+headerbar button {
+    background: transparent;
+    border: 1px solid transparent;
+    color: @fg_color;
+    border-radius: 6px;
+    padding: 6px 12px;
+    margin: 2px;
+}
+
+headerbar button:hover {
+    background: rgba(8, 145, 178, 0.1);
+    border-color: rgba(8, 145, 178, 0.3);
+    color: @accent_color;
+}
+
+headerbar button:active {
+    background: rgba(8, 145, 178, 0.2);
+    border-color: @accent_color;
+    color: @accent_color;
+}
+
+/* Buttons */
+button {
+    background: linear-gradient(to bottom, #FFFFFF, #F5F5F5);
+    border: 1px solid @borders;
+    color: @fg_color;
+    border-radius: 6px;
+    padding: 8px 16px;
+    margin: 2px;
+}
+
+button:hover {
+    background: linear-gradient(to bottom, #0891B2, #06B6D4);
+    border-color: @accent_color;
+    color: @accent_fg_color;
+    box-shadow: 0 2px 8px rgba(8, 145, 178, 0.2);
+}
+
+button:active {
+    background: linear-gradient(to bottom, #0E7490, #0891B2);
+    border-color: @accent_color;
+    color: @accent_fg_color;
+}
+
+button:disabled {
+    background: @insensitive_bg_color;
+    border-color: @unfocused_borders;
+    color: @insensitive_fg_color;
+}
+
+/* Suggested action buttons */
+button.suggested-action {
+    background: linear-gradient(to bottom, #059669, #10B981);
+    border-color: #059669;
+    color: #FAFAFA;
+}
+
+button.suggested-action:hover {
+    background: linear-gradient(to bottom, #047857, #059669);
+    box-shadow: 0 2px 8px rgba(5, 150, 105, 0.3);
+}
+
+/* Destructive action buttons */
+button.destructive-action {
+    background: linear-gradient(to bottom, #DC2626, #EF4444);
+    border-color: #DC2626;
+    color: #FAFAFA;
+}
+
+button.destructive-action:hover {
+    background: linear-gradient(to bottom, #B91C1C, #DC2626);
+    box-shadow: 0 2px 8px rgba(220, 38, 38, 0.3);
+}
+
+/* Entry fields */
+entry {
+    background-color: @base_color;
+    border: 1px solid @borders;
+    color: @text_color;
+    border-radius: 6px;
+    padding: 8px 12px;
+    margin: 2px;
+}
+
+entry:focus {
+    border-color: @accent_color;
+    box-shadow: 0 0 0 2px rgba(8, 145, 178, 0.2);
+}
+
+entry:disabled {
+    background-color: @insensitive_base_color;
+    border-color: @unfocused_borders;
+    color: @insensitive_fg_color;
+}
+
+/* Notebook tabs */
+notebook {
+    background-color: @bg_color;
+}
+
+notebook header {
+    background: linear-gradient(to bottom, #FFFFFF, #F5F5F5);
+    border-bottom: 1px solid @borders;
+}
+
+notebook tab {
+    background: transparent;
+    border: 1px solid transparent;
+    color: @fg_color;
+    padding: 8px 16px;
+    margin: 2px;
+    border-radius: 6px 6px 0 0;
+}
+
+notebook tab:hover {
+    background: rgba(8, 145, 178, 0.1);
+    border-color: rgba(8, 145, 178, 0.3);
+    color: @accent_color;
+}
+
+notebook tab:checked {
+    background: @bg_color;
+    border-color: @borders;
+    border-bottom-color: @bg_color;
+    color: @accent_color;
+}
+
+/* Scrollbars */
+scrollbar {
+    background: @base_color;
+    border: none;
+}
+
+scrollbar slider {
+    background: linear-gradient(to bottom, #D1D5DB, #9CA3AF);
+    border: 1px solid @borders;
+    border-radius: 6px;
+    min-width: 12px;
+    min-height: 12px;
+}
+
+scrollbar slider:hover {
+    background: linear-gradient(to bottom, #0891B2, #06B6D4);
+    border-color: @accent_color;
+}
+
+scrollbar slider:active {
+    background: @accent_color;
+    border-color: @accent_color;
+}
+
+/* Treeview */
+treeview {
+    background-color: @base_color;
+    color: @text_color;
+}
+
+treeview:selected {
+    background-color: @selected_bg_color;
+    color: @selected_fg_color;
+}
+
+treeview header button {
+    background: linear-gradient(to bottom, #FFFFFF, #F5F5F5);
+    border: 1px solid @borders;
+    color: @fg_color;
+    font-weight: bold;
+}
+
+/* Menu */
+menu {
+    background-color: @bg_color;
+    border: 1px solid @borders;
+    border-radius: 6px;
+    padding: 4px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+menuitem {
+    color: @fg_color;
+    padding: 6px 12px;
+    border-radius: 4px;
+}
+
+menuitem:hover {
+    background-color: @selected_bg_color;
+    color: @selected_fg_color;
+}
+
+menuitem:disabled {
+    color: @insensitive_fg_color;
+}
+
+/* Popover */
+popover {
+    background-color: @bg_color;
+    border: 1px solid @borders;
+    border-radius: 8px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+}
+
+/* Tooltip */
+tooltip {
+    background-color: @tooltip_bg_color;
+    color: @tooltip_fg_color;
+    border: 1px solid @borders;
+    border-radius: 6px;
+    padding: 6px 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Progress bar */
+progressbar {
+    background-color: @base_color;
+    border: 1px solid @borders;
+    border-radius: 6px;
+}
+
+progressbar progress {
+    background: linear-gradient(to right, #0891B2, #059669, #BE185D);
+    border-radius: 6px;
+    min-height: 6px;
+}
+
+/* Scale (slider) */
+scale {
+    background: transparent;
+}
+
+scale trough {
+    background-color: @base_color;
+    border: 1px solid @borders;
+    border-radius: 6px;
+    min-height: 6px;
+}
+
+scale highlight {
+    background: linear-gradient(to right, #0891B2, #059669);
+    border-radius: 6px;
+}
+
+scale slider {
+    background: linear-gradient(to bottom, #0891B2, #06B6D4);
+    border: 2px solid @borders;
+    border-radius: 50%;
+    min-width: 16px;
+    min-height: 16px;
+}
+
+scale slider:hover {
+    background: @accent_color;
+    border-color: @accent_color;
+    box-shadow: 0 0 8px rgba(8, 145, 178, 0.3);
+}
+
+/* Switch */
+switch {
+    background-color: @base_color;
+    border: 1px solid @borders;
+    border-radius: 12px;
+    min-width: 44px;
+    min-height: 24px;
+}
+
+switch:checked {
+    background: linear-gradient(to right, #0891B2, #059669);
+    border-color: @accent_color;
+}
+
+switch slider {
+    background: linear-gradient(to bottom, #FFFFFF, #F5F5F5);
+    border: 1px solid @borders;
+    border-radius: 50%;
+    min-width: 20px;
+    min-height: 20px;
+    margin: 1px;
+}
+
+switch:checked slider {
+    background: linear-gradient(to bottom, #FAFAFA, #F5F5F5);
+    border-color: @accent_color;
+}
+
+/* Check and radio buttons */
+checkbutton check,
+radiobutton radio {
+    background-color: @base_color;
+    border: 1px solid @borders;
+    color: @text_color;
+    min-width: 16px;
+    min-height: 16px;
+}
+
+checkbutton check {
+    border-radius: 4px;
+}
+
+radiobutton radio {
+    border-radius: 50%;
+}
+
+checkbutton check:checked,
+radiobutton radio:checked {
+    background: linear-gradient(to bottom, #0891B2, #06B6D4);
+    border-color: @accent_color;
+    color: @accent_fg_color;
+}
+
+checkbutton check:hover,
+radiobutton radio:hover {
+    border-color: @accent_color;
+    box-shadow: 0 0 4px rgba(8, 145, 178, 0.2);
+}
+
+/* Separator */
+separator {
+    background-color: @borders;
+    min-width: 1px;
+    min-height: 1px;
+}
+
+/* Frame */
+frame {
+    border: 1px solid @borders;
+    border-radius: 6px;
+}
+
+frame > label {
+    color: @accent_color;
+    font-weight: bold;
+    margin: 0 8px;
+    padding: 0 4px;
+    background-color: @bg_color;
+}
+
+/* Statusbar */
+statusbar {
+    background-color: @bg_color;
+    border-top: 1px solid @borders;
+    color: @fg_color;
+    padding: 4px 8px;
+}
+
+/* Infobar */
+infobar {
+    border-radius: 6px;
+    margin: 4px;
+    padding: 8px;
+}
+
+infobar.info {
+    background-color: rgba(8, 145, 178, 0.1);
+    border: 1px solid @accent_color;
+    color: @accent_color;
+}
+
+infobar.warning {
+    background-color: rgba(217, 119, 6, 0.1);
+    border: 1px solid @warning_color;
+    color: @warning_color;
+}
+
+infobar.error {
+    background-color: rgba(220, 38, 38, 0.1);
+    border: 1px solid @error_color;
+    color: @error_color;
+}
+
+infobar.success {
+    background-color: rgba(5, 150, 105, 0.1);
+    border: 1px solid @success_color;
+    color: @success_color;
+}

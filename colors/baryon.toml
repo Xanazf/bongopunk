@@ -1,0 +1,65 @@
+# Bongopunk Baryon (Light Mode) Color Palette
+# Based on Fluoromachine by maxmx03
+# Light mode variant with darker, muted accents
+#
+# Transparency Support:
+# - Use "NONE" or "none" for transparent backgrounds
+# - Adjust opacity values in terminal configs
+# - See TRANSPARENCY.md for detailed setup guide
+
+[colors]
+# Base colors
+bg = "#FAFAFA"           # Light gray background
+fg = "#2D2D2D"           # Dark gray foreground
+bg_alt = "#F5F5F5"       # Lighter background variant
+fg_alt = "#6B7280"       # Muted foreground variant
+
+# Selection and highlights
+selection = "#E5E7EB"    # Selection background
+line_highlight = "#F3F4F6"  # Current line highlight
+cursor = "#2D2D2D"       # Cursor color
+
+# Accent colors (darker/muted)
+cyan = "#0891B2"         # Dark cyan
+green = "#059669"        # Dark green
+orange = "#EA580C"       # Dark orange
+pink = "#BE185D"         # Dark pink
+purple = "#7C3AED"       # Dark purple
+red = "#DC2626"          # Dark red
+yellow = "#D97706"       # Dark yellow
+
+# Bright variants (for highlights)
+cyan_bright = "#06B6D4"
+green_bright = "#10B981"
+orange_bright = "#F59E0B"
+pink_bright = "#EC4899"
+purple_bright = "#8B5CF6"
+red_bright = "#EF4444"
+yellow_bright = "#F59E0B"
+
+# UI elements
+border = "#D1D5DB"       # Border color
+comment = "#9CA3AF"      # Comment color
+warning = "#D97706"      # Warning color
+error = "#DC2626"        # Error color
+info = "#0891B2"         # Info color
+success = "#059669"      # Success color
+
+# Terminal colors (16-color palette)
+[terminal]
+black = "#1F2937"
+red = "#DC2626"
+green = "#059669"
+yellow = "#D97706"
+blue = "#0891B2"
+magenta = "#BE185D"
+cyan = "#0891B2"
+white = "#6B7280"
+bright_black = "#4B5563"
+bright_red = "#EF4444"
+bright_green = "#10B981"
+bright_yellow = "#F59E0B"
+bright_blue = "#06B6D4"
+bright_magenta = "#EC4899"
+bright_cyan = "#06B6D4"
+bright_white = "#2D2D2D"
