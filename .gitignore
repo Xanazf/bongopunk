@@ -52,7 +52,7 @@ __pycache__/
 # Lua cache
 luac.out
 
-./gtk/themes/Bongopunk-Antibaryon-GTK/assets
-./gtk/themes/Bongopunk-Antibaryon-GTK/assets/*
-./gtk/themes/Bongopunk-Baryon-GTK/assets
-./gtk/themes/Bongopunk-Baryon-GTK/assets/*
+gtk/themes/Bongopunk-Antibaryon-GTK/assets
+gtk/themes/Bongopunk-Antibaryon-GTK/assets/*
+gtk/themes/Bongopunk-Baryon-GTK/assets
+gtk/themes/Bongopunk-Baryon-GTK/assets/*
