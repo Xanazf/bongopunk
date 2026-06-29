@@ -7,8 +7,7 @@
 # - Adjust opacity values in terminal configs
 # - See TRANSPARENCY.md for detailed setup guide
 
-[colors]
-# Base colors
+[colors.base]
 bg = "#090318"           # Dark navy-blue background
 fg = "#8BA7A7"           # Light blue-gray foreground
 bg_alt = "#070216"       # Darker navy background variant
@@ -20,6 +19,7 @@ line_highlight = "#2D4A5C"  # Current line highlight
 cursor = "#8BA7A7"       # Cursor color
 
 # Accent colors (neon/bright)
+[colors.accent]
 cyan = "#61E2FF"         # Electric cyan
 green = "#72F1B8"        # Neon green
 orange = "#FF8B39"       # Bright orange
@@ -29,6 +29,7 @@ red = "#FE4450"          # Bright red
 yellow = "#FFCC00"       # Electric yellow
 
 # Muted variants
+[colors.accent_muted]
 cyan_muted = "#4A9FB8"
 green_muted = "#5BB896"
 orange_muted = "#CC6F2E"
@@ -38,6 +39,7 @@ red_muted = "#CB3740"
 yellow_muted = "#CCA300"
 
 # UI elements
+[colors.ui]
 border = "#4A6B7C"       # Border color
 comment = "#495495"      # Comment color
 warning = "#FFCC00"      # Warning color
@@ -46,7 +48,7 @@ info = "#61E2FF"         # Info color
 success = "#72F1B8"      # Success color
 
 # Terminal colors (16-color palette)
-[terminal]
+[colors.terminal]
 black = "#090318"
 red = "#FE4450"
 green = "#72F1B8"
